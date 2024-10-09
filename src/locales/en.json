@@ -1,0 +1,19 @@
+{
+  "app": {
+    "grace": "Grace Reformed baptist Church",
+    "header": "1689 London baptist confession",
+    "header_1": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.",
+    "header_2": "",
+    "contact_us": "Contact Us",
+    "resources": "Resources",
+    "about": "About",
+    "elder": "Elder",
+    "pastor": "Pastor",
+    "elders": {
+      "habtamu": "Habtamu asefa",
+      "israel": "Israel dubarge",
+      "yishrun": "Yishrun Girma",
+      "migbaru": "Migbaru"
+    }
+  }
+}

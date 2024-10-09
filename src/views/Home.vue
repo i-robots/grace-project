@@ -24,12 +24,10 @@ import FooterComponent from "../components/Footer.vue";
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
+                  {{ $t('app.header') }}
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Tailwind Starter Kit. It features multiple CSS components
-                  based on the Tailwindcss design system.
+                  {{ $t('app.header_1') }}
                 </p>
               </div>
             </div>
@@ -167,9 +165,9 @@ import FooterComponent from "../components/Footer.vue";
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Habtamu asefa</h5>
+                  <h5 class="text-xl font-bold">{{ $t('app.elders.habtamu') }}</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                   Elder
+                   {{ $t('app.elder') }}
                   </p>
                 </div>
               </div>
@@ -183,9 +181,9 @@ import FooterComponent from "../components/Footer.vue";
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Israel dubarge</h5>
+                  <h5 class="text-xl font-bold">{{ $t('app.elders.israel') }}</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Pastor
+                    {{ $t('app.pastor') }}
                   </p>
                 </div>
               </div>
@@ -199,9 +197,9 @@ import FooterComponent from "../components/Footer.vue";
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Yishrun Girma</h5>
+                  <h5 class="text-xl font-bold">{{ $t('app.elders.yishrun') }}</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Elder
+                    {{ $t('app.elder') }}
                   </p>
                 </div>
               </div>
@@ -215,9 +213,9 @@ import FooterComponent from "../components/Footer.vue";
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Migbaru</h5>
+                  <h5 class="text-xl font-bold">{{ $t('app.elders.migbaru') }}</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Elder
+                    {{ $t('app.elder') }}
                   </p>
                 </div>
               </div>

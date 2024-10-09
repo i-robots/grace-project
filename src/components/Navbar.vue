@@ -11,7 +11,7 @@
         <a
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-          >Grace Reformed baptist Church</a
+          >{{ $t('app.grace') }}</a
         ><button
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
@@ -32,14 +32,14 @@
               ><i
                 class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
               ></i
-              ><span class="inline-block ml-2">About</span></a
+              ><span class="inline-block ml-2">{{ $t('app.about') }}</span></a
             >
           </li>
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="#resources"
-              ><span class="inline-block ml-2">Resources</span></a
+              ><span class="inline-block ml-2">{{ $t('app.resources') }}</span></a
             >
           </li>
           <li class="flex items-center">
@@ -47,8 +47,13 @@
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="#contact"
             >
-              contact us
+              {{$t('app.contact_us') }}
           </a>
+          </li>
+          <li>
+            <button @click="changeLanguage(isEng ? 'am': 'en')" class="text-xs font-bold underline px-3 py-4">
+              {{ isEng ? 'AM' : 'EN' }}
+            </button>
           </li>
         </ul>
       </div>
@@ -62,10 +67,18 @@ export default {
       showMenu: false
     }
   },
+  computed: {
+    isEng() {
+      return this.$i18n.locale === 'en'
+    }
+  },
   methods: {
     toggleNavbar: function(){
       this.showMenu = !this.showMenu;
-    }
+    },
+    changeLanguage(lang: string) {
+      this.$i18n.locale = lang; 
+    },
   }
 }
 </script>
