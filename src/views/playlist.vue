@@ -15,12 +15,12 @@
           class="flex flex-col mb-4 border p-2"
           target="_blank"
         >
-          <h2 class="md:max-w-md max-w-sm">{{ video.snippet.title || ".." }}</h2>
-          <p class="truncate max-w-sm overflow-hidden">
+          <h2 class="lg:max-w-md md:max-w-sm max-w-xs">{{ video.snippet.title || ".." }}</h2>
+          <p class="truncate md:max-w-sm max-w-xs overflow-hidden">
             {{ video.snippet.description }}
           </p>
           <img
-            class="p-4"
+            class="p-2"
             :src="video.snippet.thumbnails.medium.url"
             :alt="video.snippet.title"
         /></a>

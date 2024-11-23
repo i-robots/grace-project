@@ -4,14 +4,14 @@
       <QuillEditor ref="editor" :modules="modules" toolbar="full" />
     </div>
     <div class="absolute bottom-2 right-2 flex gap-3">
-      <button class="bg-gray-800 px-5 py-2 rounded-md hover:bg-gray-600">
+      <button class="bg-gray-800 text-gray-100 px-5 py-2 rounded-md hover:bg-gray-600">
         Close
       </button>
       <button
         @click="onSave"
-        class="bg-gray-800 px-5 py-2 rounded-md hover:bg-gray-600"
+        class="bg-gray-800 px-5 py-2 text-gray-100 rounded-md hover:bg-gray-600"
       >
-        Save Article
+        {{ articleId ? 'Update': 'Save' }} Article
       </button>
     </div>
   </div>
@@ -27,7 +27,6 @@ const editor = ref();
 const articleId = ref();
 
 const onSave = async () => {
-  const range = editor.value.getQuill().getSelection();
   let payload = editor.value.getQuill().getContents();
 
   if (articleId.value) {
@@ -59,7 +58,7 @@ const modules = {
         quill.insertEmbed(range.index, "image", imageUrl);
         quill.enable();
       } catch (e) {
-        console.log(e);
+        console.error(e);
       }
     },
   },

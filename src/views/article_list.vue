@@ -1,14 +1,21 @@
 <template>
-  <div v-if="articles.length" class="mt-4 flex flex-col gap-3 mx-4">
-    <h1 class="text-xl font-bold">Article list</h1>
-    <div
-      v-for="a in articles"
-      :key="a._id"
-      class="border p-3 cursor-pointer hover:bg-slate-200"
-      @click="$router.push({ path: `/article/${a._id}` })"
-    >
-      <div v-html="renderContent(a.ops)"></div>
+  <div>
+    <section class="bg-gray-600 min-h-20">
+      <Navbar />
+    </section>
+
+    <div v-if="articles.length" class="mt-4 flex flex-col gap-3 mx-4">
+      <h1 class="text-xl font-bold">Article list</h1>
+      <div
+        v-for="a in articles"
+        :key="a._id"
+        class="border p-3 cursor-pointer hover:bg-slate-200"
+        @click="$router.push({ path: `/article/${a._id}` })"
+      >
+        <div v-html="renderContent(a.ops)"></div>
+      </div>
     </div>
+    <footer-component class="mt-32"></footer-component>
   </div>
 </template>
 <script setup lang="ts">
@@ -16,6 +23,8 @@ import { AxiosResponse } from "axios";
 import { fetchArticle } from "../lib/api";
 import { ref, onMounted } from "vue";
 import { Article, Op } from "../types/article";
+import FooterComponent from "../components/Footer.vue";
+import Navbar from "../components/Navbar.vue";
 
 const articles = ref<Article[]>([]);
 
