@@ -22,33 +22,28 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl font-semibold">1689 London baptist confession</h4>
+          <h4 class="text-3xl font-semibold"> {{ $t("app.header") }}</h4>
           <h5 class="text-lg mt-0 mb-2 text-gray-700">
-            Located at Holy city center, addis ababa
+            {{ $t("app.location") }}
           </h5>
           <p>socail media</p>
-          <div class="mt-6">
+          <div class="my-4">
             <button
               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
               type="button"
             >
-              <i class="flex fab fa-twitter"></i></button
+              <i class="flex fab fa-twitter">🐦</i></button
             ><button
               class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
               type="button"
             >
-              <i class="flex fab fa-facebook-square"></i></button
+              <i class="flex fab fa-facebook-square">📱</i></button
             ><button
               class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
               type="button"
             >
-              <i class="flex fab fa-dribbble"></i></button
-            ><button
-              class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button"
+              <i class="flex fab fa-dribbble">🎥</i></button
             >
-              <i class="flex fab fa-github"></i>
-            </button>
           </div>
         </div>
         <div class="w-full lg:w-6/12 px-4">
@@ -69,22 +64,15 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://blog.creative-tim.com"
-                    >Blog</a
+                    href="/articles"
+                    >Articles</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.github.com/creativetimofficial"
-                    >Github</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/bootstrap-themes/free"
-                    >Free Products</a
+                    href="/article"
+                    >Post</a
                   >
                 </li>
               </ul>
@@ -98,28 +86,21 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                    >MIT License</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/terms"
+                    href="/terms"
                     >Terms &amp; Conditions</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/privacy"
+                    href="/privacy"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/contact-us"
+                    href="/contact-us"
                     >Contact Us</a
                   >
                 </li>
@@ -134,11 +115,11 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © {{date}} Tailwind Starter Kit by
+            Copyright © {{date}} Grace reformed church
             <a
               href="https://www.creative-tim.com"
               class="text-gray-600 hover:text-gray-900"
-              >Creative Tim</a
+              >ET</a
             >.
           </div>
         </div>

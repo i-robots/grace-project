@@ -1,0 +1,39 @@
+{
+    "app": {
+        "grace": "Mana Kiristaana Reformed Baptist Grace",
+        "header": "Eenyummaa Baptist London 1689",
+        "header_1": "Kanaaf, achi deemaatii saboota hundumaaf barsiisota taasisaa, maqaa Abbaa, Ilmaa, fi Hafuura Qulqulluutti cuuphaatii.",
+        "header_2": "",
+        "contact_us": "Nu qunnamaa",
+        "resources": "Qabeenya",
+        "about": "Waa'ee keenya",
+        "elder": "Abbaa Gadaa",
+        "pastor": "Wangeelaa",
+        "elders": {
+            "habtamu": "Habtaamuu Asefaa",
+            "israel": "Isra’eel Dubaarggee",
+            "yishrun": "Yishurun Girmmaa",
+            "migbaru": "Migbaaruu"
+        },
+        "meet_elders": "Abbootii Gadaa Keenya Argadhaa",
+        "elder_text": "Abbootii Gadaa ogummaa hafuuraan cimsanii nu geggeessan, nu gorsan, nu jajjabeessan qabaachuun keenya gammachuu dha. Abbootiin Gadaa afur walitti dhiyeenyaan filatamanii, amanamummaa fi kutannoo dhaan tajaajiluuf ummata keenya biraa filatamaniiru.",
+        "play_list": "Viidiyoo Tarree",
+        "featured_articles": "Maqaa Barreeffamoota Addaa",
+        "looking_for_church": "Mana Kiristaanaa Reformed barbaadaa jirta?",
+        "church_text_long": "Nu waliin Mana Kiristaanaa Reformed Grace keessatti walitti qabamnee Waaqa waaqeffanna, Jecha isaa baranna, fi amantii keenya waliin jiraanna. Amantii Reformed keessa haaraatti jirta yoo ta’e yookiin Waaqa waliin walitti dhufeenya cimsachuuf iddoo barbaadaa jirta yoo ta’e, simannaa keenya kan qulqulluu argattu.",
+        "bible_teach": "Barsiisa Macaafa Qulqulluu",
+        "centerd_worship": "Waaqeffannaa Kiristoositti xiyyeeffate",
+        "community": "Hirmaattota Amantaa",
+        "bible_authority": "Hojii Macaafa Qulqulluu irratti amanna, jecha Waaqaa amanamummaadhaan barsiisuuf tattaaffanna.",
+        "worship_text": "Waaaqeffannaan keenya hojii fi ulfina Gooftaa Kiristoos irratti xiyyeeffata.",
+        "join_txt": "Waa'ee Waaqeffannaa dhaan ibsa barsiisaa fi kadhannaa irratti fuulleffateetti nu waliin hirmaadhaa.",
+        "everyone_welcome": "Hunduu simatamoodha",
+        "complete_form": "Furmaata kana guutaa, guyyaa tokko keessatti deebii argattu.",
+        "full_name": "Maqaa guutuu",
+        "email": "Iimeelii",
+        "message": "Ergaa",
+        "send_message": "Ergaa ergaa",
+        "type_msg": "Ergaa barreessaa ...",
+        "location": "Holi Siitii, Finfinnee keessatti argama"
+    }    
+}

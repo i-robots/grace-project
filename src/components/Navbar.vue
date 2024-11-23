@@ -51,8 +51,8 @@
           </a>
           </li>
           <li>
-            <button @click="changeLanguage(isEng ? 'am': 'en')" class="text-xs font-bold underline px-3 py-4">
-              {{ isEng ? 'AM' : 'EN' }}
+            <button @click="changeLanguage(isAfaan ? 'am' : isEng ? 'or': 'en')" class="text-white text-xs font-bold underline px-3 py-4">
+              {{ isAfaan ? 'AM' : isEng ? 'OR': 'EN' }}
             </button>
           </li>
         </ul>
@@ -70,6 +70,9 @@ export default {
   computed: {
     isEng() {
       return this.$i18n.locale === 'en'
+    },
+    isAfaan() {
+      return this.$i18n.locale === 'or'
     }
   },
   methods: {
