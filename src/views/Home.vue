@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import NavbarComponent from "../components/Navbar.vue";
 import FooterComponent from "../components/Footer.vue";
+//@ts-ignore
 import playlist from "./playlist.vue";
 import { ref, onMounted } from "vue";
 import { fetchArticle } from "../lib/api"; // Replace with your API function

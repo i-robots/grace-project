@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import { createWebHistory, createRouter } from "vue-router";
-import Home from './views/Home.vue'
-import Article from './views/Article.vue'
-import { createI18n } from 'vue-i18n'
+import Home from './views/Home.vue';
+//@ts-ignore
+import Article from './views/article.vue';
+import { createI18n } from 'vue-i18n';
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import './style.css'

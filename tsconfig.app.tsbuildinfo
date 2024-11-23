@@ -1,1 +1,1 @@
-{"root":["./src/main.ts","./src/vite-env.d.ts","./src/App.vue","./src/components/Footer.vue","./src/components/Navbar.vue","./src/views/Home.vue"],"version":"5.6.2"}
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/lib/api.ts","./src/locales/index.ts","./src/types/article.d.ts","./src/App.vue","./src/components/Footer.vue","./src/components/Navbar.vue","./src/views/Home.vue","./src/views/Test.vue","./src/views/article.vue","./src/views/article_list.vue","./src/views/article_view.vue","./src/views/playlist.vue"],"version":"5.6.2"}
