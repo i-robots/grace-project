@@ -3,15 +3,18 @@
     <div class="h-full">
       <QuillEditor ref="editor" :modules="modules" toolbar="full" />
     </div>
-    <div class="absolute bottom-2 right-2 flex gap-3">
-      <button class="bg-gray-800 text-gray-100 px-5 py-2 rounded-md hover:bg-gray-600">
+    <div class="fixed bottom-2 right-2 flex gap-3">
+      <button
+        @click="$router.push({ path: '/' })"
+        class="bg-gray-800 text-gray-100 px-5 py-2 rounded-md hover:bg-gray-600"
+      >
         Close
       </button>
       <button
         @click="onSave"
         class="bg-gray-800 px-5 py-2 text-gray-100 rounded-md hover:bg-gray-600"
       >
-        {{ articleId ? 'Update': 'Save' }} Article
+        {{ articleId ? "Update" : "Save" }} Article
       </button>
     </div>
   </div>
@@ -30,15 +33,15 @@ const onSave = async () => {
   let payload = editor.value.getQuill().getContents();
 
   if (articleId.value) {
-    if (typeof payload.ops[0].insert === 'string') {
-      payload = {...payload, title: payload.ops[0].insert }
+    if (typeof payload.ops[0].insert === "string") {
+      payload = { ...payload, title: payload.ops[0].insert };
     }
     const res = await updateObject(articleId.value, payload);
-    alert(res.data.message)
+    alert(res.data.message);
   } else {
     const res = await saveObject(payload);
-    articleId.value = res.data.data._id
-    alert(res.data.message)
+    articleId.value = res.data.data._id;
+    alert(res.data.message);
   }
 };
 

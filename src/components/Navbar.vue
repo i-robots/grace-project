@@ -21,6 +21,7 @@
         </button>
       </div>
       <div
+        v-if="$route.path === '/'"
         class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
         v-bind:class="{ hidden: !showMenu, block: showMenu }"
       >
