@@ -71,7 +71,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/article"
+                    href="/post"
                     >Post</a
                   >
                 </li>

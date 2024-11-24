@@ -26,7 +26,7 @@ const routes = [
     component: Home,
   },
   {
-    path: '/article',
+    path: '/post',
     component: Article
   },
   {
