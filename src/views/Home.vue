@@ -130,7 +130,7 @@ const renderContent = (ops: Op[]) => {
                 <!--start here-->
                 <div
                   class="p-4 md:w-1/3 w-full cursor-pointer hover:bg-slate-200"
-                  v-for="a in articles"
+                  v-for="(a, count) in articles"
                   :key="a._id"
                   @click="$router.push({ path: `/article/${a._id}` })"
                 >
@@ -148,7 +148,7 @@ const renderContent = (ops: Op[]) => {
                         </div>
                         <div class="pl-2 pt-2">
                           <p class="font-bold">Israel dubarge</p>
-                          <p class="text-xs">2 June 2024</p>
+                          <p class="text-xs">{{count * 3 + 1  }} June 2024</p>
                         </div>
                       </div>
                     </div>
@@ -162,7 +162,7 @@ const renderContent = (ops: Op[]) => {
                     <div class="p-4">
                       <div v-html="renderContent(a.ops)"></div>
                       <div class="flex items-center flex-wrap">
-                        <a href="/" class="text-green-800 md:mb-2 lg:mb-0">
+                        <a :href="`/article/${a._id}`" class="text-green-800 md:mb-2 lg:mb-0">
                           <p class="inline-flex items-center">
                             Read Article
                             <svg

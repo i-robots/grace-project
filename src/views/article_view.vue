@@ -4,15 +4,15 @@
       <navbar-component></navbar-component>
     </section>
 
-    <i class="flex justify-end mr-1 mb-1 cursor-pointer" @click="onEdit"
-      >&hellip;</i
-    >
+    <div class="flex justify-end pr-2 mb-1 cursor-pointer">
+      <u @click="onEdit">&hellip;</u>
+    </div>
 
     <QuillEditor
       ref="editor"
       theme="snow"
       :read-only="edit || $route.query.edit ? false : true"
-      :toolbar="edit || $route.query.edit ? 'essential' : []"
+      :toolbar="edit || $route.query.edit ? 'full' : []"
       :key="String(edit)"
     />
 
